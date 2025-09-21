@@ -1,0 +1,15 @@
+# Mapping Defaults
+default_mapping = "passthrough"
+debounce_time_ms = 20
+
+available = ["passthrough", "WoW", "other_game"]
+mapping_directory = "keymaps/"
+
+#Neopixel Defaults
+brightness = 3 # TOML only supports integers so scale in code.
+color = "blue"
+num_pixels = 1
+
+# Performance Settings
+gc_interval_seconds = 10
+debug_mode = "true"
