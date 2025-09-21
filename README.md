@@ -2,6 +2,10 @@
 
 This is a little project to create useful mappings for a device that a friend of mine likes. The software to customize it has long since stopped working.
 
+In this particular case the hardware in question is a "Fang" Gamepad, sometimes called a Z-pad, or called by its model number: [KU-0536](https://duckduckgo.com/?q=ku-0536).
+
+On eBay they are still selling for roughly US$100, so it's worth (key)habilitating.
+
 So I'm putting an [Adafruit Feather RP 2040 with Type A Host](https://learn.adafruit.com/adafruit-feather-rp2040-with-usb-type-a-host/overview) between the device and the computer. This project, written in CircuitPython, allows the user to capture the outputs of the keyboard and re-map them to the desired inputs for their computer.
 
 ## Building
