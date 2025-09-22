@@ -2,3 +2,7 @@
 /lib
 /sd
 boot_out.txt
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
