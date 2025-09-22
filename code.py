@@ -6,7 +6,7 @@ from modules import keyboard_handler
 keyboard_handler = keyboard_handler.KeyboardHandler()
 debug_mode = os.getenv("debug_mode", "false").lower() == "true"
 
-print("Keyhabilitator v0.5 by Nate Dickson. MMXXV")
+print("Keyhabilitator v1.0 by Nate Dickson. MMXXV")
 
 if debug_mode:
     print(f"Debug mode is ON")
@@ -15,9 +15,10 @@ if debug_mode:
 
 while True:
     keyboard_handler.read_input_with_error_handling()
-    # For Debugging: 
-    report = keyboard_handler.parse_hid_report(keyboard_handler.hid_buffer)
-    if report:
-        print(f"Report: {report}\n")
+    # For Debugging:
+    if debug_mode:
+        report = keyboard_handler.parse_hid_report(keyboard_handler.hid_buffer)
+        if report:
+            print(f"Report: {report}\n")
 
 # type: ignore
