@@ -52,7 +52,3 @@ And yes, the file has white defined as half-white, because neopixels are bad at 
 
 
 The `name` is currently unused but could be used if you are working with a device that has a screen or something.
-
-## TODO:
-
-I need to implement a hotkey combo that will let the user switch keymaps on the fly.
