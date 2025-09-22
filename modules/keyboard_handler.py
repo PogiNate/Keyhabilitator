@@ -51,7 +51,6 @@ class KeyboardHandler:
             k = report[i]
             if k > 1:
                 pressed_keys.add(hex(k))
-        print(f"Pressed keys: {pressed_keys}\n")
         return pressed_keys
     
     def read_input_with_error_handling(self):
@@ -78,7 +77,8 @@ class KeyboardHandler:
         try:
             for key in keys:
                 remapped_key = self.layout_manager.get_key_mapping(key)
-                self.output_device.press(remapped_key)
-                self.output_device.release_all()
+                if remapped_key:
+                    self.output_device.press(remapped_key)
+                    self.output_device.release_all()
         except Exception as e:
             print(f"Error sending remapped keys: {e}")

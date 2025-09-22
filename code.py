@@ -12,7 +12,9 @@ if debug_mode:
 
 while True:
     keyboard_handler.read_input_with_error_handling()
-    if debug_mode:
-        report = keyboard_handler.parse_hid_report(keyboard_handler.hid_buffer)
-        if report:
-            print(f"Report: {report}\n")
+    # For Debugging: 
+    report = keyboard_handler.parse_hid_report(keyboard_handler.hid_buffer)
+    if report:
+        print(f"Report: {report}\n")
+
+# type: ignore

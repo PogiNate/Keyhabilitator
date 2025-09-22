@@ -1,3 +1,4 @@
 *.code-workspace
 /lib
 /sd
+boot_out.txt

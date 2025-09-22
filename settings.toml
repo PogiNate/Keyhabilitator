@@ -1,8 +1,10 @@
 # Mapping Defaults
 default_mapping = "passthrough"
-debounce_time_ms = 20
+layout_swap_key = "0x30" # "Q.Load" key
 
-available = ["passthrough", "WoW", "other_game"]
+# Comma-separated list of available layouts. Must match filenames in mapping_directory
+# This is the order they will be cycled through.
+available = "passthrough,f_keys,WoW,other_game"
 mapping_directory = "keymaps/"
 
 #Neopixel Defaults
@@ -11,5 +13,4 @@ color = "blue"
 num_pixels = 1
 
 # Performance Settings
-gc_interval_seconds = 10
-debug_mode = "true"
+debug_mode = "false"
