@@ -3,7 +3,7 @@ from modules import keyboard_handler
 keyboard_handler = keyboard_handler.KeyboardHandler()
 debug_mode = os.getenv("debug_mode", "false").lower() == "true"
 
-print("Keyhabilitator v0.5 by Nate Dickson. MMXXV")
+print("Keyhabilitator v1.0 by Nate Dickson. MMXXV")
 
 if debug_mode:
     print(f"Debug mode is ON")
