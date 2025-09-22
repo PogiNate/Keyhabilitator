@@ -1,3 +1,7 @@
+# MIT License
+# Copyright (c) 2025 Nate Dickson
+# See LICENSE file in the project root for full license text.
+
 import array
 import os
 import usb 

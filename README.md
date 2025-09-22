@@ -52,3 +52,9 @@ And yes, the file has white defined as half-white, because neopixels are bad at 
 
 
 The `name` is currently unused but could be used if you are working with a device that has a screen or something.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Nate Dickson
