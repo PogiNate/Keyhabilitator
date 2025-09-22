@@ -56,3 +56,7 @@ The `name` is currently unused but could be used if you are working with a devic
 ## TODO:
 
 I need to implement a hotkey combo that will let the user switch keymaps on the fly.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.

@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Nate Dickson
+# Licensed under the MIT License. See LICENSE.txt for details.
+
 import json
 import gc
 import os
