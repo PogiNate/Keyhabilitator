@@ -8,6 +8,12 @@ On eBay they are still selling for roughly US$100, so it's worth (key)habilitati
 
 So I'm putting an [Adafruit Feather RP 2040 with Type A Host](https://learn.adafruit.com/adafruit-feather-rp2040-with-usb-type-a-host/overview) between the device and the computer. This project, written in CircuitPython, allows the user to capture the outputs of the keyboard and re-map them to the desired inputs for their computer.
 
+## Update: I liked it so Much... 
+I had fun building this and liked it so much I decided to make one for myself. Since I can't find the "Fang" gamepad, I 
+bought a different one, that's basically just half a keyboard. 
+
+A few other updates have been made to this version. 
+
 ## Building
 
 This code is written for [CircuitPython 10.0.0-beta.3](https://circuitpython.org/board/adafruit_feather_rp2040_usb_host/)
@@ -57,3 +63,16 @@ The `name` is currently unused but could be used if you are working with a devic
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+
+# Changelog:
+
+## 1.0.1
+
+- Fixed Modifier keys not being reported correctly.
+- Removed the too-long blink time. 
+- Streamlined some logic in the keyboard manager. 
+
+## 1.0.0
+
+- Initial "release". 
+- Fixed faulty "release all" logic.

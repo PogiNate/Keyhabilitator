@@ -1,6 +1,6 @@
 # Mapping Defaults
-default_mapping = "passthrough"
-layout_swap_key = "0x30" # "Q.Load" key
+default_mapping = "passthrough" 
+layout_swap_key = "0x10" # "Globe" key
 
 # Comma-separated list of available layouts. Must match filenames in mapping_directory
 # This is the order they will be cycled through.
@@ -9,8 +9,8 @@ mapping_directory = "keymaps/"
 
 #Neopixel Defaults
 brightness = 3 # TOML only supports integers so scale in code.
-color = "blue"
-num_pixels = 1
+color = "blue" 
+num_pixels = 1 
 
 # Performance Settings
 debug_mode = "false"
