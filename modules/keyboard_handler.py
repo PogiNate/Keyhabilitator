@@ -133,6 +133,8 @@ class KeyboardHandler:
             # Release keys that were pressed but are no longer pressed
             released_keys = old_keys - current_keys
             for key in released_keys:
+                if key == self.layout_manager.swap_key:
+                    continue  # Skip releasing the swap key
                 remapped_key = self.layout_manager.get_key_mapping(key)
                 if remapped_key:
                     self.output_device.release(remapped_key)
@@ -148,6 +150,8 @@ class KeyboardHandler:
                 remapped_key = self.layout_manager.get_key_mapping(key)
                 if remapped_key:
                     self.output_device.press(remapped_key)
+                    if self.debug_mode:
+                        print(f"Pressed remapped key: {remapped_key}")
 
             # Update old_keys and old_modifiers for next iteration
             self.old_keys = list(current_keys)

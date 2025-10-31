@@ -89,8 +89,10 @@ class LayoutManager:
     def get_key_mapping(self, hexcode):
         """Get the remapped keycode from the current layout."""
         if self.debug_mode:
-            print(f"hexcode")
+            print(f"{hexcode}")
         if hexcode == self.swap_key:
+            if self.debug_mode:
+                print("Swap key pressed. Changing layout.")
             self.get_next_layout()
             return None
         self.flicker_pixel()
